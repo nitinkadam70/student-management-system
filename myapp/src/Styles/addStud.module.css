@@ -2,3 +2,78 @@
   display: flex;
   justify-content: space-between;
 }
+h4 {
+  font-weight: 500;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0% 2% 0% 0%;
+}
+.form > input,
+.form > select {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  margin-top: 5%;
+}
+
+.form {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-template-areas:
+    'First_Name First_Name Middle_Name Middle_Name Last_Name Last_Name'
+    'Class Class Division Division Roll_Number Roll_Number'
+    'address1 address1 address1 address2 address2 address2'
+    'landmark landmark city city pincode pincode'
+    'btn btn 0 0 0 0';
+}
+
+.First_Name {
+  grid-area: First_Name;
+}
+.Middle_Name {
+  grid-area: Middle_Name;
+}
+.Class {
+  grid-area: Class;
+}
+.Last_Name {
+  grid-area: Last_Name;
+}
+.Division {
+  grid-area: Division;
+}
+.Roll_Number {
+  grid-area: Roll_Number;
+}
+.address1 {
+  grid-area: address1;
+}
+
+.address2 {
+  grid-area: address2;
+}
+.landmark {
+  grid-area: landmark;
+}
+.city {
+  grid-area: city;
+}
+.pincode {
+  grid-area: pincode;
+}
+.btn {
+  grid-area: btn;
+  background-color: #f33823;
+  color: white;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5%;
+}
