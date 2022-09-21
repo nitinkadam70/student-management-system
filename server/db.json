@@ -1,0 +1,18 @@
+{
+  "studentsData": [
+    {
+      "First Name": "Nitin",
+      "Middle Name": "Anantrao",
+      "Last Name": "Kadam",
+      "Class": 12,
+      "Division": "I",
+      "Roll Number": "41",
+      "Address Line 1": "near Basmat road",
+      "Address Line 2": "shivaji nagar,parbhani",
+      "Landmark": "02452",
+      "City": "Parbhani",
+      "Pincode": "431401",
+      "id": 1
+    }
+  ]
+}
