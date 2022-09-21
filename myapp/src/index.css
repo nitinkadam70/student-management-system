@@ -14,15 +14,17 @@
   grid-template-areas: 'sidebar page';
   justify-content: space-between;
   gap: 2%;
+  margin-top: 2%;
 }
 body {
   background-color: #fffcfb;
 }
 
-/* .active:is(:link, :active, :visited):active {
+.active {
   background-color: #f33823;
-  color: white;
-} */
+  color: white !important;
+}
+
 @media all and (min-width: 50px) and (max-width: 450px) {
   .container {
     display: grid;

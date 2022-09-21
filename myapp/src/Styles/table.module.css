@@ -1,0 +1,40 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+table td,
+table th {
+  padding: 15px;
+}
+
+table tr:nth-child(even) {
+  background-color: #fff6f5;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  background-color: #f33823;
+  color: white;
+}
+.crud {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+}
+span > :first-child {
+  color: #f33823;
+  cursor: pointer;
+}
+span > :first-child:hover {
+  color: green;
+}

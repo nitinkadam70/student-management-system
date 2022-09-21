@@ -37,7 +37,7 @@ const AddStudentsData = () => {
           required
           className={styles.First_Name}
           type="text"
-          placeholder="  First Name"
+          placeholder="First Name"
         />
         <input
           name="Middle Name"
@@ -45,7 +45,7 @@ const AddStudentsData = () => {
           required
           className={styles.Middle_Name}
           type="text"
-          placeholder="  Middle Name"
+          placeholder="Middle Name"
         />
         <input
           name="Last Name"
@@ -53,7 +53,7 @@ const AddStudentsData = () => {
           required
           className={styles.Last_Name}
           type="text"
-          placeholder="  Last Name"
+          placeholder="Last Name"
         />
         <select
           name="Class"
@@ -94,7 +94,7 @@ const AddStudentsData = () => {
           required
           className={styles.Roll_Number}
           type="number"
-          placeholder="  Enter Roll Number in Digits"
+          placeholder="Enter Roll Number in Digits"
         />
 
         <input
@@ -103,7 +103,7 @@ const AddStudentsData = () => {
           required
           className={styles.address1}
           type="text"
-          placeholder="  Address Line 1"
+          placeholder="Address Line 1"
         />
         <input
           name="Address Line 2"
@@ -111,15 +111,16 @@ const AddStudentsData = () => {
           required
           className={styles.address2}
           type="text"
-          placeholder="  Address Line 2"
+          placeholder="Address Line 2"
         />
         <input
           name="Landmark"
+          maxLength={6}
           onChange={handlechange}
           required
           className={styles.landmark}
           type="text"
-          placeholder="  Landmark"
+          placeholder="Landmark"
         />
         <input
           name="City"
@@ -127,7 +128,7 @@ const AddStudentsData = () => {
           required
           className={styles.city}
           type="text"
-          placeholder="  city"
+          placeholder="city"
         />
         <input
           name="Pincode"
@@ -135,7 +136,7 @@ const AddStudentsData = () => {
           required
           className={styles.pincode}
           type="text"
-          placeholder="  Pincode"
+          placeholder="Pincode"
         />
         <button className={styles.btn} type="submit">
           Add Student

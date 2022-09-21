@@ -9,20 +9,20 @@ const Sidebar = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.Sidebar}>
-      <div onClick={() => navigate('/')}>
+      <NavLink className={styles.link} to="/addStudents">
         <MdOutlineGroupAdd />
-        <p>Add Student</p>
-      </div>
+        <span>Add Student</span>
+      </NavLink>
       <br />
-      <div onClick={() => navigate('/mngstudents')}>
+      <NavLink className={styles.link} to="/mngstudents">
         <TbListDetails />
-        <p>Manage Students</p>
-      </div>
+        <span>Manage Students</span>
+      </NavLink>
       <br />
-      <div>
+      <NavLink className={styles.link} to="/logout">
         <IoIosLogOut />
-        <p>Logout</p>
-      </div>
+        <span>Logout</span>
+      </NavLink>
     </div>
   );
 };

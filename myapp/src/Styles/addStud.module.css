@@ -99,6 +99,7 @@ h4 {
       'btn btn';
   }
 }
-input {
-  padding: 2%;
+input,
+select {
+  padding: 15px;
 }

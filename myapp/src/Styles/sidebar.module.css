@@ -4,7 +4,8 @@
   margin-top: 15%;
   max-width: 100%;
 }
-.Sidebar > div {
+.link {
+  color: #989290;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -13,18 +14,16 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.Sidebar > div:hover {
+.link:hover {
   background-color: #f33823;
   color: white;
 }
-.Sidebar > div > :last-child {
+
+.link :last-child {
   font-size: 15px;
-}
-.Sidebar > div:visited {
-  background-color: #f33823;
-  color: white;
 }
 
 @media all and (min-width: 50px) and (max-width: 450px) {
@@ -34,7 +33,7 @@
     margin-top: 10%;
     max-width: 100%;
   }
-  .Sidebar > div {
+  .link {
     display: flex;
     align-items: center;
     justify-content: left;

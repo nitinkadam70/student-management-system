@@ -1,4 +1,5 @@
 import React from 'react';
+import Table from '../Components/Table';
 import useClock from '../customHook/useClock';
 import styles from '../Styles/manageStu.module.css';
 
@@ -15,6 +16,10 @@ const ManageStudents = () => {
             ':' +
             minutes}
         </h4>
+      </div>
+
+      <div className={styles.students}>
+        <Table />
       </div>
     </div>
   );
