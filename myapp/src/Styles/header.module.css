@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+}
+
+.Header > div:first-child {
+  max-width: 200px;
+}
+
+.Header > div:first-child > img {
+  max-width: 100%;
+}
+.Header > div:last-child {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 1% 4%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,27 @@
+.Sidebar {
+  font-size: 20px;
+  color: #989290;
+}
+.Sidebar > div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 5%;
+  padding: 5%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Sidebar > div:hover {
+  background-color: #f33823;
+  color: white;
+}
+.Sidebar > div > :last-child {
+  font-size: 15px;
+}
+.Sidebar > div:visited {
+  background-color: #f33823;
+  color: white;
+}
