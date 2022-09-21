@@ -1,14 +1,15 @@
 .Sidebar {
   font-size: 20px;
   color: #989290;
+  margin-top: 15%;
+  max-width: 100%;
 }
 .Sidebar > div {
   display: flex;
   align-items: center;
   justify-content: left;
   gap: 10px;
-  margin-bottom: 5%;
-  padding: 5%;
+  padding: 6%;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
@@ -24,4 +25,22 @@
 .Sidebar > div:visited {
   background-color: #f33823;
   color: white;
+}
+
+@media all and (min-width: 50px) and (max-width: 450px) {
+  .Sidebar {
+    font-size: 16px;
+    color: #989290;
+    margin-top: 10%;
+    max-width: 100%;
+  }
+  .Sidebar > div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
 }

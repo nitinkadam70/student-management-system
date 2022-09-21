@@ -13,10 +13,12 @@ const Sidebar = () => {
         <MdOutlineGroupAdd />
         <p>Add Student</p>
       </div>
+      <br />
       <div onClick={() => navigate('/mngstudents')}>
         <TbListDetails />
         <p>Manage Students</p>
       </div>
+      <br />
       <div>
         <IoIosLogOut />
         <p>Logout</p>

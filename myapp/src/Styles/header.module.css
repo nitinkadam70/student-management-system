@@ -21,3 +21,12 @@
   gap: 10px;
   border-radius: 5px;
 }
+@media all and (min-width: 50px) and (max-width: 600px) {
+  .Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

@@ -13,19 +13,31 @@
   grid-template-columns: 250px 1fr;
   grid-template-areas: 'sidebar page';
   justify-content: space-between;
+  gap: 2%;
 }
 body {
   background-color: #fffcfb;
-}
-.container > div:first-child {
-  border: 1px solid black;
-}
-
-.container > div:last-child {
-  border: 1px solid black;
 }
 
 /* .active:is(:link, :active, :visited):active {
   background-color: #f33823;
   color: white;
 } */
+@media all and (min-width: 50px) and (max-width: 450px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'sidebar'
+      'page';
+    justify-content: space-between;
+  }
+}
+@media all and (min-width: 451px) and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'sidebar page';
+    justify-content: space-between;
+  }
+}

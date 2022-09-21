@@ -77,3 +77,28 @@ h4 {
   border-radius: 5px;
   margin-top: 5%;
 }
+
+@media all and (min-width: 50px) and (max-width: 800px) {
+  .form {
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      'First_Name First_Name'
+      'Middle_Name Middle_Name'
+      'Last_Name Last_Name'
+      'Class Class '
+      'Division Division'
+      'Roll_Number Roll_Number'
+      'address1 address1'
+      'address2 address2'
+      'landmark landmark'
+      'city city'
+      'pincode pincode'
+      'btn btn';
+  }
+}
+input {
+  padding: 2%;
+}
