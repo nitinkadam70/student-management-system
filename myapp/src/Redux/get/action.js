@@ -24,7 +24,7 @@ const getStudentsDataError = () => ({
 export const getStudentsData = () => (dispach) => {
   dispach(getStudentsDataRequest());
   axios({
-    url: `${process.env.REACT_APP_API}/studentsData`,
+    url: process.env.REACT_APP_API,
     method: 'GET',
   })
     .then((res) => dispach(getStudentsDataSuccess(res.data)))

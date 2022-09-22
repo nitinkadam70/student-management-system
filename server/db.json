@@ -1,14 +1,14 @@
 {
   "studentsData": [
     {
-      "First Name": "Nitin",
-      "Middle Name": "Anantrao",
-      "Last Name": "Kadam",
+      "First_Name": "Nitin",
+      "Middle_Name": "Anantrao",
+      "Last_Name": "Kadam",
       "Class": 12,
       "Division": "I",
-      "Roll Number": "41",
-      "Address Line 1": "near Basmat road",
-      "Address Line 2": "shivaji nagar,parbhani",
+      "Roll_Number": "41",
+      "Address_Line_1": "near Basmat road",
+      "Address_Line_2": "shivaji nagar,parbhani",
       "Landmark": "02452",
       "City": "Parbhani",
       "Pincode": "431401",

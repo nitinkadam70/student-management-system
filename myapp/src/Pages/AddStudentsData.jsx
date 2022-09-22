@@ -17,6 +17,7 @@ const AddStudentsData = () => {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let payload = JSON.stringify(userData);
@@ -27,8 +28,8 @@ const AddStudentsData = () => {
     return (
       <center>
         <img
-          style={{ widht: '100px' }}
-          src="https://media.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.gif"
+          style={{ width: '100%', height: '80vh' }}
+          src="https://cdn.dribbble.com/users/77121/screenshots/15191750/media/0ce749e630ca31ffd76e105b09340b45.gif"
           alt="loder"
         />
       </center>
@@ -137,7 +138,7 @@ const AddStudentsData = () => {
           onChange={handlechange}
           required
           className={styles.landmark}
-          type="text"
+          type="number"
           placeholder="Landmark"
         />
         <input
@@ -153,8 +154,10 @@ const AddStudentsData = () => {
           onChange={handlechange}
           required
           className={styles.pincode}
-          type="text"
+          type="number"
           placeholder="Pincode"
+          minLength={6}
+          maxLength={6}
         />
 
         <button className={styles.btn} type="submit">

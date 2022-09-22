@@ -4,6 +4,7 @@ import AddStudentsData from './Pages/AddStudentsData';
 import ManageStudents from './Pages/ManageStudents';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
+import Popup from './Components/Popup';
 function App() {
   return (
     <>

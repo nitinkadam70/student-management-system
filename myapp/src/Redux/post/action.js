@@ -24,25 +24,27 @@ const addStudentsDataError = (payload) => ({
 export const addStudentsData = (payload) => (dispach) => {
   dispach(addStudentsDataRequest());
   axios({
-    url: `${process.env.REACT_APP_API}/studentsData`,
+    url: process.env.REACT_APP_API,
     method: 'POST',
     data: payload,
     headers: { 'Content-Type': 'application/json' },
   })
-    .then((res) =>
+    .then((res) => {
       dispach(
         addStudentsDataSuccess({
           status: true,
           message: 'Data Add Successfully',
         })
-      )
-    )
-    .catch((error) =>
+      );
+      alert('Added successfully');
+    })
+    .catch((error) => {
       dispach(
         addStudentsDataError({
           status: false,
           message: 'Something went wrong while adding Data',
         })
-      )
-    );
+      );
+      alert('Something went wrong while adding Data');
+    });
 };
