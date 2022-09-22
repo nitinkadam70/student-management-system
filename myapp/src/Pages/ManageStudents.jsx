@@ -17,7 +17,6 @@ const ManageStudents = () => {
             minutes}
         </h4>
       </div>
-
       <div className={styles.students}>
         <Table />
       </div>

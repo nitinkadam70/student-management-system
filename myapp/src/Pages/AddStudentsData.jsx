@@ -1,10 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import useClock from '../customHook/useClock';
+import { addStudentsData } from '../Redux/post/action';
 import styles from '../Styles/addStud.module.css';
 
 const AddStudentsData = () => {
   const { hours, minutes } = useClock();
+  const dispatch = useDispatch();
+  const { loading, msg, error } = useSelector((store) => store.post);
 
   const [userData, setUserData] = useState({});
   const handlechange = (e) => {
@@ -15,9 +19,23 @@ const AddStudentsData = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(userData);
+    let payload = JSON.stringify(userData);
+    dispatch(addStudentsData(payload));
   };
 
+  if (loading) {
+    return (
+      <center>
+        <img
+          style={{ widht: '100px' }}
+          src="https://media.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.gif"
+          alt="loder"
+        />
+      </center>
+    );
+  } else if (error) {
+    return alert('Something went Wrong');
+  }
   return (
     <div className={styles.container}>
       <div className={styles.hedder}>
@@ -32,7 +50,7 @@ const AddStudentsData = () => {
       </div>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
-          name="First Name"
+          name="First_Name"
           onChange={handlechange}
           required
           className={styles.First_Name}
@@ -40,7 +58,7 @@ const AddStudentsData = () => {
           placeholder="First Name"
         />
         <input
-          name="Middle Name"
+          name="Middle_Name"
           onChange={handlechange}
           required
           className={styles.Middle_Name}
@@ -48,7 +66,7 @@ const AddStudentsData = () => {
           placeholder="Middle Name"
         />
         <input
-          name="Last Name"
+          name="Last_Name"
           onChange={handlechange}
           required
           className={styles.Last_Name}
@@ -89,7 +107,7 @@ const AddStudentsData = () => {
           <option value="E">E</option>
         </select>
         <input
-          name="Roll Number"
+          name="Roll_Number"
           onChange={handlechange}
           required
           className={styles.Roll_Number}
@@ -98,7 +116,7 @@ const AddStudentsData = () => {
         />
 
         <input
-          name="Address Line 1"
+          name="Address_Line_1"
           onChange={handlechange}
           required
           className={styles.address1}
@@ -106,7 +124,7 @@ const AddStudentsData = () => {
           placeholder="Address Line 1"
         />
         <input
-          name="Address Line 2"
+          name="Address_Line_2"
           onChange={handlechange}
           required
           className={styles.address2}
@@ -138,6 +156,7 @@ const AddStudentsData = () => {
           type="text"
           placeholder="Pincode"
         />
+
         <button className={styles.btn} type="submit">
           Add Student
         </button>
