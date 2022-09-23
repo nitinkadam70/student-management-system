@@ -1,0 +1,38 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2%;
+}
+
+.container > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container > div > div > :first-child {
+  padding: 10px;
+  color: white;
+  background-color: red;
+  border: none;
+}
+.container > div > div > :last-child {
+  color: white;
+  padding: 10px;
+  background-color: green;
+  border: none;
+}

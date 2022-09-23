@@ -36,7 +36,7 @@ export const addStudentsData = (payload) => (dispach) => {
           message: 'Data Add Successfully',
         })
       );
-      alert('Added successfully');
+      alert('Added Successfully');
     })
     .catch((error) => {
       dispach(

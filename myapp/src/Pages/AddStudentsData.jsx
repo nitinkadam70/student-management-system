@@ -1,15 +1,16 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useClock from '../customHook/useClock';
 import { addStudentsData } from '../Redux/post/action';
 import styles from '../Styles/addStud.module.css';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AddStudentsData = () => {
   const { hours, minutes } = useClock();
   const dispatch = useDispatch();
   const { loading, msg, error } = useSelector((store) => store.post);
-
   const [userData, setUserData] = useState({});
   const handlechange = (e) => {
     setUserData({
@@ -164,6 +165,7 @@ const AddStudentsData = () => {
           Add Student
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };

@@ -5,6 +5,8 @@ import ManageStudents from './Pages/ManageStudents';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import Popup from './Components/Popup';
+import EditData from './Components/EditData';
+import { useEffect } from 'react';
 function App() {
   return (
     <>
@@ -20,6 +22,7 @@ function App() {
               element={<AddStudentsData />}
             />
             <Route path="/mngstudents" element={<ManageStudents />} />
+            <Route path="/mngstudents/:id" element={<EditData />} />
           </Routes>
         </div>
       </div>
