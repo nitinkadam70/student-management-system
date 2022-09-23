@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import AddStudentsData from './Pages/AddStudentsData';
 import ManageStudents from './Pages/ManageStudents';
 import Header from './Components/Header';
@@ -7,7 +7,12 @@ import Sidebar from './Components/Sidebar';
 import Popup from './Components/Popup';
 import EditData from './Components/EditData';
 import { useEffect } from 'react';
+
 function App() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate('/addStudents');
+  }, []);
   return (
     <>
       <Header />
