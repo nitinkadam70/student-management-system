@@ -5,9 +5,9 @@ Live Link : https://resolute-ai-assign-nitinkadam.netlify.app
 
 # Features
 <ol>
-<li>Indicators - Loading, success & error</li>
-<li>Responsive website</li>
-<li>Crud operations - create, read, update and delete</li>
+  <li>Crud operations - create, read, update and delete</li>
+<li>Responsive website for - desktops, tablets, and phones</li>
+  <li>Indicators - Loading, success & error</li>
 </ol>
 
 # Teck Stack
