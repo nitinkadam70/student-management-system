@@ -11,7 +11,8 @@ h4 {
   padding: 0% 2% 0% 0%;
 }
 .form > input,
-.form > select {
+.form > select,
+form > textarea {
   height: 50px;
   border-radius: 5px;
   border: none;
@@ -54,10 +55,12 @@ h4 {
 }
 .address1 {
   grid-area: address1;
+  margin-top: 4%;
 }
 
 .address2 {
   grid-area: address2;
+  margin-top: 4%;
 }
 .landmark {
   grid-area: landmark;
@@ -77,7 +80,7 @@ h4 {
   border-radius: 5px;
   margin-top: 5%;
 }
-.btn:hover{
+.btn:hover {
   background-color: rgb(207, 11, 11);
   font-weight: bold;
 }
@@ -104,6 +107,7 @@ h4 {
   }
 }
 input,
-select {
+select,
+textarea {
   padding: 15px;
 }

@@ -124,22 +124,25 @@ const AddStudentsData = () => {
           }}
         />
 
-        <input
+        <textarea
           name="Address_Line_1"
           onChange={handlechange}
           required
           className={styles.address1}
           type="text"
           placeholder="Address Line 1"
+          rows="3"
         />
-        <input
+        <textarea
           name="Address_Line_2"
           onChange={handlechange}
           required
           className={styles.address2}
           type="text"
           placeholder="Address Line 2"
+          rows={'3'}
         />
+
         <input
           name="Landmark"
           onChange={handlechange}

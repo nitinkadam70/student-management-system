@@ -25,6 +25,8 @@ table th {
   text-align: left;
   background-color: #f33823;
   color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .crud {
   display: flex;
