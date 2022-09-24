@@ -19,10 +19,10 @@ const Sidebar = () => {
         <span>Manage Students</span>
       </NavLink>
       <br />
-      <NavLink className={styles.link} to="/logout">
+      <p className={styles.link} to="/logout">
         <IoIosLogOut />
         <span>Logout</span>
-      </NavLink>
+      </p>
     </div>
   );
 };

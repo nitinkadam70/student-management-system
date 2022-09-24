@@ -77,6 +77,10 @@ h4 {
   border-radius: 5px;
   margin-top: 5%;
 }
+.btn:hover{
+  background-color: rgb(207, 11, 11);
+  font-weight: bold;
+}
 
 @media all and (min-width: 50px) and (max-width: 800px) {
   .form {

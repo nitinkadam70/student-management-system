@@ -18,11 +18,11 @@ const AddStudentsData = () => {
       [e.target.name]: e.target.value,
     });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let payload = JSON.stringify(userData);
     dispatch(addStudentsData(payload));
+    setUserData('');
   };
 
   if (loading) {
@@ -82,18 +82,18 @@ const AddStudentsData = () => {
           className={styles.Class}
         >
           <option>Select Class</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
+          <option value="I">I</option>
+          <option value="II">II</option>
+          <option value="III">III</option>
+          <option value="IV">IV</option>
+          <option value="V">V</option>
+          <option value="VI">VI</option>
+          <option value="VII">VII</option>
+          <option value="VIII">VIII</option>
+          <option value="IX">IX</option>
+          <option value="X">X</option>
+          <option value="XI">XI</option>
+          <option value="XII">XII</option>
         </select>
         <select
           name="Division"
@@ -115,6 +115,13 @@ const AddStudentsData = () => {
           className={styles.Roll_Number}
           type="number"
           placeholder="Enter Roll Number in Digits"
+          onInput={(e) => {
+            if (e.target.value.length > 2)
+              e.target.value = e.target.value.slice(
+                0,
+                e.target.maxLength
+              );
+          }}
         />
 
         <input
@@ -135,12 +142,18 @@ const AddStudentsData = () => {
         />
         <input
           name="Landmark"
-          maxLength={6}
           onChange={handlechange}
           required
           className={styles.landmark}
           type="number"
           placeholder="Landmark"
+          onInput={(e) => {
+            if (e.target.value.length > 6)
+              e.target.value = e.target.value.slice(
+                0,
+                e.target.maxLength
+              );
+          }}
         />
         <input
           name="City"
@@ -157,8 +170,13 @@ const AddStudentsData = () => {
           className={styles.pincode}
           type="number"
           placeholder="Pincode"
-          minLength={6}
-          maxLength={6}
+          onInput={(e) => {
+            if (e.target.value.length > 6)
+              e.target.value = e.target.value.slice(
+                0,
+                e.target.maxLength
+              );
+          }}
         />
 
         <button className={styles.btn} type="submit">

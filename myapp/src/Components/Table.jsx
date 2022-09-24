@@ -56,7 +56,14 @@ const Table = () => {
       </center>
     );
   } else if (error) {
-    return alert('Something went Wrong');
+    return (
+      <div>
+        <img
+          src="https://cdn.dribbble.com/users/1190995/screenshots/3307869/dribbble.png"
+          alt="error"
+        />
+      </div>
+    );
   } else if (show) {
     return <Popup setShow={setShow} show={show} id={id} />;
   }
@@ -79,7 +86,9 @@ const Table = () => {
                   <td>
                     {elem.First_Name} {elem.Last_Name}{' '}
                   </td>
-                  <td>{elem.Class}</td>
+                  <td>
+                    {elem.Class}-{elem.Division}
+                  </td>
                   <td>{elem.Roll_Number}</td>
                   <td className={styles.crud}>
                     <span>
